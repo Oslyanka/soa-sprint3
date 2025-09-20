@@ -1,7 +1,7 @@
 # Sprint 3 – SOA (Arquitetura Orientada a Serviços) – Recomendação de Investimentos
 
-# Para testar os endpoints, importe a coleção:
-# docs/SOA_Sprint3_Investimentos.postman_collection.json
+Para testar os endpoints, importe a coleção:
+docs/SOA_Sprint3_Investimentos.postman_collection.json
 
 # Membros do grupo:
 - [Ian Xavier Kuraoka] - RM98860
