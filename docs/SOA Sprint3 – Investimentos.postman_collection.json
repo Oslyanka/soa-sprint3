@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "7ec8d844-d02f-4e88-9d6e-8d96901fde14",
+		"name": "SOA Sprint3 – Investimentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44582931",
+		"_collection_link": "https://akselviktor.postman.co/workspace/Aksel-Viktor's-Workspace~9457247e-c432-4ed9-8668-d36c6ed724c0/collection/44582931-7ec8d844-d02f-4e88-9d6e-8d96901fde14?action=share&source=collection_link&creator=44582931"
+	},
+	"item": [
+		{
+			"name": "Listar todos os ativos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/assets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar ativo por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/assets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar ativo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"TESOUROIPCA\",\r\n  \"name\": \"Tesouro IPCA 2035\",\r\n  \"assetClass\": \"RENDA_FIXA\",\r\n  \"riskLevel\": \"BAIXO\",\r\n  \"priceInCents\": 123456,\r\n  \"currency\": \"BRL\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/assets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar ativo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"TESOUROIPCA\",\r\n  \"name\": \"Tesouro IPCA 2045\",\r\n  \"assetClass\": \"RENDA_FIXA\",\r\n  \"riskLevel\": \"MODERADO\",\r\n  \"priceInCents\": 150000,\r\n  \"currency\": \"BRL\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedidos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir ativo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/assets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar ativo por código",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/assets/by-code/TESOUROIPCA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets",
+						"by-code",
+						"TESOUROIPCA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar ativo + cotação externa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/assets/quote/TESOUROIPCA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"assets",
+						"quote",
+						"TESOUROIPCA"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
