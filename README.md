@@ -21,8 +21,6 @@ Projeto base em Spring Boot 3 (Java 17) com:
 ## Como rodar
 ```
 mvn spring-boot:run
-# ou
-mvn clean package && java -jar target/soa-sprint3-invest-0.0.1-SNAPSHOT.jar
 ```
 
 A API sobe em http://localhost:8080.
